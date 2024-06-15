@@ -1,5 +1,4 @@
-
-header = {
+headers = {
     "Content-Type": "application/json"
 }
 
@@ -9,8 +8,50 @@ user_body = {
     "address": "8042 Lancaster Ave.Hamburg, NY"
 }
 
-kit_body = {"name": "Mi conjunto"}
+kit_name = {
+    "name": "El punto dulce"
 
-token = {
-    "authToken": "jknnFApafP4awfAIFfafam2fma"
+}
+
+kit_body = {}
+
+# Test1
+one_letter_name = {
+    "name": "a"
+}
+
+# Test2
+inside_511_letters = {
+    "name": "AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabC"
+}
+
+# Test3
+zero_letter_name = {
+    "name": ""
+}
+
+# Test4
+outside_limit_512_letters = {
+    "name": "AbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdAbcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcD"
+}
+
+# Test5
+special_symbol = {
+    "name": "№%@"
+}
+# Test6
+space_in_name = {
+    "name": " A Aaa "
+}
+# Test7
+number_in_name = {
+    "name": "123"
+}
+# Test8
+no_name = {
+    "name": {}
+}
+# Test9
+kit_has_number = {
+    "name": 123
 }
