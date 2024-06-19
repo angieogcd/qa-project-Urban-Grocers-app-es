@@ -22,10 +22,8 @@ def get_new_user_token():
 # Crear nuevo kit de producto
 def post_new_client_kit(kit_name):
     new_token = get_new_user_token()
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {new_token}"
-    }
+    headers = data.headers.copy()
+    headers["Authorization"] = f"Bearer {new_token}"
     response = requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
                              json=kit_name,
                              headers=headers)

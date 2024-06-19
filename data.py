@@ -48,9 +48,8 @@ number_in_name = {
     "name": "123"
 }
 # Test8
-no_name = {
-    "name": {}
-}
+no_name = { }
+
 # Test9
 kit_has_number = {
     "name": 123
